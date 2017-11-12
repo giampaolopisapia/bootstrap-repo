@@ -33,8 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
               </ul>
               <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                    <a id="loginButton"><span class="fa fa-sign-in"></span> Login</a>
               </span>
             </div>
       </div>
@@ -82,9 +81,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col col-sm align-self-center">
-                  <a type="button" class="btn btn-warning btn-sm btn-block"
-                        data-toggle="modal" data-target="#reservationModal"> Reserve Table
-                 </a>
+                  <button class="btn btn-warning btn-sm btn-block" id="reserveButton"> Reserve Table
+                 </button>
                 </div>
             </div>
         </div>
@@ -342,36 +340,12 @@
         </div>
     </footer>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-<<<<<<< HEAD
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/tether/dist/js/tether.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-        <script>
-                $(document).ready(function(){
-                    $("#mycarousel").carousel( { interval: 2000 } );
-                    $("#carousel-button").click(function(){
-                        if($(this).children("span").hasClass("fa-pause")){
-                            $("#mycarousel").carousel('pause');
-                            $(this).children("span").removeClass("fa-pause")
-                            $(this).children("span").addClass("fa-play")
-                        }
-                        else if($(this).children("span").hasClass("fa-play")){
-                            $("#mycarousel").carousel('cycle');
-                            $(this).children("span").removeClass("fa-play")
-                            $(this).children("span").addClass("fa-pause")
-                        }
-                    });
-                });
-        </script>
-=======
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
->>>>>>> a38276d5ee582f289365a6a2c816fdcac98840e0
 
 </body>
 
